@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Signin</title>
+  <meta name="description" content="">
+
+  <meta name="renderer" content="webkit">
+  <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!--<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>-->
+  <link rel="apple-touch-icon-precomposed" href="./img/signin.jpg"/>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!--<link rel="stylesheet" href="../../css/common.css">-->
+  <link rel="stylesheet" href="./css/signin.css">
+
+</head>
+<body>
+
+
+<div class="container">
+
+
+
+  <div>
+      <input type = button id="btnsignin" value="signin"/>
+      <span id="signin"></span>
+
+    </br>
+    <input type = button id="btnsignout" value="signout"/>
+      <span id="signout"></span>
+</br>
+    <input type = button id="clear" value="clear"/>
+
+  </div>
+
+
+</div>
+
+
+
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./js/global.js"> </script>
+<script src="./js/signin.js"> </script>
+<script>
+  $(document).ready(function() {
+    app.signin.init();
+    $('.ui-icon-loading').next().hide()
+  });
+</script>
+
+</body>
+</html>
