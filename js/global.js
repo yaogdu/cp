@@ -2,19 +2,12 @@
  * Created by duyaoguang on 2015/1/22.
  */
 var app = {
-    courseware : {
-        new : {
-
-        }
+    courseware: {
+        new: {}
     },
-    clock : {
-        
-    },
-    smoking : {
-
-    }
+    clock: {},
+    smoking: {},
+    stat: {}
 }
 
-var user = {
-
-}
+var user = {}
