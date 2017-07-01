@@ -1,0 +1,347 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: underline;
+}
+h3{
+	font-weight: 500;
+	font-size: 20px;
+}
+#nav{
+	width: 100%;
+	height: 72px;
+	background: #ff405c;
+	position: fixed;
+    top: 0px;
+    z-index: 999;
+	
+}
+.mainnav{
+	width: 1190px;
+	height: 72px;
+	
+}
+.navLogo{
+	display: block;
+	line-height: 37px;
+	width: 150px;
+	float: left;
+	
+}
+.navLogo img{
+	margin-top: 10px;
+}
+.navmenu{
+	width: 359.05px;
+	height: 72px;
+	float: left;
+	
+	margin-left: 640px;
+}
+.navmenu a{
+	display: block;
+    line-height: 72px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+	float: left;
+    text-decoration: none;
+    margin-left: 54px;
+	color: #FFFFFF;
+}
+.navmenu a:hover{
+	text-decoration: underline;
+}
+.banner{
+	width: 100%;
+	height: 448px;
+	overflow: hidden;
+
+}
+.banner img{
+	width: 100%;
+}
+.text{
+	width: 100%;
+	background: #f8f8f8;
+	height: 300px;
+
+}
+.text_img{
+	text-align: center;
+}
+.list{
+	width: 100%;
+	height:1468px;
+	
+}
+.list_menu{
+    width: 1190px;
+    margin: 100px auto 0px;
+    position: relative;
+}
+.list h3{
+	font-size: 32px;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+
+    width: 356px;
+    height: 58px;
+    margin: 0 auto;
+}
+#span{
+
+  position: absolute;
+    width: 120px;
+    height: 3px;
+    background: #ff405c;
+	bottom: 0px;
+    left: 530px;
+ 
+  
+}
+.list_tab{
+	width: 1190px;
+	margin-top: 50px;
+	
+}
+.list_tab li{
+	width: 376px;
+    height: 650px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+    margin: 30px 10px 0px;
+    cursor: pointer;
+}
+.list_tab dt{
+	overflow: hidden;
+}
+.list_tab dd{
+	    padding: 0px 20px;
+	    box-sizing: border-box;
+}
+.list_tab .dd01{
+	line-height: 65px;
+	font-size: 16px;
+	color: #000000;
+}
+
+.list_tab .dd02{
+	
+	font-size: 14px;
+    color: #666;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+.list_tab .dd03{
+	
+	 width: 170px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    color: #fff;
+    background: #ff405c;
+    margin: 40px auto 30px;
+}
+.list_tab .dd04{
+	
+	 width: 260px;
+    height: 300px;
+    margin: 30px auto 0px;
+    overflow: hidden;
+   display: none;
+}
+.box{
+	width: 100%;
+	margin-top: 50px;
+}
+.box img{
+	width: 100%;
+}
+.downBox{
+	width:100%;
+
+}
+.downpart01 {
+	width: 1190px;
+	margin: 0px auto;
+
+}
+.downpart01 .weixin{
+	font-size: 32px;
+	text-align: center;
+	height: 200px;
+	line-height: 200px;
+	position: relative;
+}
+
+
+.downpart01 .weixin span{
+
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: #ff405c;
+    left: 50%;
+    margin-left: -60px;
+    top: 130px;
+    }
+  .h3{
+  	font-weight: 500;
+  	font-size: 20px;
+  }  
+ .txt{
+ 	width: 374px;
+    margin-top: 25px;
+    font-size: 16px;
+    margin-left: 0px;
+ }
+ .wechat{
+ 	margin-top: 35px;
+    font-size: 16px;
+ }
+.downBox .downpart01 >ul >li > .txtdiv{
+	 margin-top: 80px;
+    margin-left: 50px;
+}
+.downBox .downpart01 >ul >li{
+	width: 50%;
+	float: left;
+	
+}
+.L_pic{
+	margin-top: 20px;
+
+	overflow: hidden;
+}
+.pic_img{
+	 border: 1px solid #d8d8d8;
+  
+    box-sizing: border-box;
+    float: left;
+}
+.pic_img02{
+	float: left;
+    margin-left: 30px;
+    margin-top: 70px;
+    width: 126px;
+    height: 126px;
+    overflow: hidden;
+}
+.fuwu{
+	width: 100%;
+	
+}
+.fuwuyx{
+	width: 1190px;
+
+	
+}
+.fuwutitle{
+	text-align: center;
+	 font-size: 32px;
+    height: 200px;
+    line-height: 200px;
+    position: relative;
+
+	
+}
+.fuwutitle span{
+	
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: #ff405c;
+    left: 50%;
+    margin-left: -60px;
+    top: 130px;
+}
+.fuwulist li{
+	width: 50%;
+	float: left;
+	
+	position: relative;
+	
+}
+.fuwulist li .con_txt{
+
+	    position: absolute;
+    width: 402px;
+    left: 160px;
+    top: 50px;
+}
+.con_txt p{
+
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.link_our{
+	width: 100%;
+    
+	
+}
+.our{
+	width: 900px;
+	overflow: hidden;
+	margin: 100px auto 0px;
+	
+	
+}
+.our li{
+	    font-size: 20px;
+    height: 50px;
+    width: 250px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    float: left;
+    margin: 0px 25px;
+   
+}
+.our >li >a{
+	    display: block;
+    text-decoration: none;
+    color: #333;
+}
+.gray_bg{
+	
+    width: 100%;
+    height: 100px;
+    background: #f2f2f2;
+    margin-top: 130px;
+    position: relative;
+ 
+}
+
+.gray_bg img{
+	
+    position: absolute;
+    left: 50%;
+    margin-left: -38px;
+    top: -34px; 
+ 
+}
+.hunt_footer{
+	    width: 100%;
+    height: 44px;
+    background: #888;
+    text-align: center;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #fff;
+    line-height: 44px;
+    overflow: hidden;
+}

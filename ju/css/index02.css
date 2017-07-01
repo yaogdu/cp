@@ -1,0 +1,221 @@
+*{
+	margin:  auto;
+	padding: 0;
+	font-size: 12px;
+	color: #3C3C3C;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+body{
+background-color: #F0F3F8;	
+}
+/*顶导航开始*/
+.top{
+	width: 100%;
+	height: 35px;
+	background: #f8f8f8;
+	border-bottom: 1px solid #e2e2e2;
+}
+.topnav{
+	
+	width: 1190px;
+	line-height: 35px;
+
+}
+.tn_left{
+	width: 60%;
+	line-height: 35px;
+	float: left;
+
+}
+.tn_left li{
+	text-align: center;
+	margin-right: 10px;
+	float: left;
+
+}
+.tn_right{
+	width: 31%;
+	line-height: 35px;
+	float: right;
+
+}
+.tn_right li{
+	text-align: center;
+	margin-right: 24px;
+	float: left;
+
+}
+.topnav a:hover{
+	color: red;
+}
+
+/*顶导航结束*/
+#banner{
+	width: 100%;
+	height: 405px;
+}
+#banner img{
+
+	   margin: 0 calc(50% - 969px);
+}
+.tab{
+	width: 100%;
+	height: 60px;
+	background-color: #FFFFFF;
+	
+}
+.tabx{
+	width: 1190px;
+	height: 60px;
+	background-color:#FFFFFF;	
+}
+.tabx li{
+	width: 297.5px;
+	height: 60px;
+	float: left;
+font-size: 24px;
+	line-height: 60px;
+	font-size: 24px;
+text-align: center;
+	background-color: rgb(255, 255, 255);
+    color: rgb(189, 11, 11);
+	
+}
+.taball{
+	width: 1210px;
+	height: 1830px;
+
+}
+.change{
+	background-color:#D91616  !important;
+	color: #FFFFFF !important;
+}
+.nine{
+	width: 1210px;
+	/*position: relative;*/
+
+}
+.nineul img{
+	width: 90%;
+}
+.nine>ul>li{
+	width: 288px;
+	/*height:370px;*/
+	overflow: hidden;
+	background-color:#FFFFFF;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	/*position: absolute;*/
+}
+
+.nine li .hanzi{
+	width: 260px;
+    font-size: 14px;
+    height: 21px;
+     margin: 15px auto;
+  
+}
+
+.n9{
+	 font-size: 18px;
+ 	 color: #d91616;
+    float: left;
+  
+   
+}
+.Big9{
+	font-size: 35px;
+	 color: #d91616;
+} 
+.nine_one{
+	width: 80px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #d91616;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+  	 float: right;
+    margin-right: 10px;
+    margin: 8px;
+}
+.nine_two{
+	width: 270px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px dashed #cccccc;
+    overflow: hidden;
+    margin: auto;
+    font-size: 12px;
+    color: #666666;
+    display: none;
+  
+  
+}
+.nineteen{
+	width: 1210px;
+	height: 100px;
+	display: none;
+}
+
+.nineteen>ul>li{
+	width: 288px;
+	height:428px;
+	background-color:#FFFFFF;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+.nineteen li .hanzi{
+	width: 260px;
+    font-size: 14px;
+    height: 21px;
+     margin: 15px auto;
+  
+}
+
+.n9{
+	 font-size: 18px;
+ 	 color: #d91616;
+    float: left;
+  
+   
+}
+.Big9{
+	font-size: 35px;
+	 color: #d91616;
+} 
+.nnineteen_one{
+	width: 80px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #d91616;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+  	 float: right;
+    margin-right: 10px;
+    margin: 8px;
+}
+.nineteen_two{
+	width: 270px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px dashed #cccccc;
+    overflow: hidden;
+    margin: auto;
+    font-size: 12px;
+    color: #666666;
+    display: none;
+  
+}
+.nineteen>ul>li:hover{
+	border: 1px solid red;
+}
