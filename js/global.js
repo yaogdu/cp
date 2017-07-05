@@ -2,19 +2,15 @@
  * Created by duyaoguang on 2015/1/22.
  */
 var app = {
-    courseware : {
-        new : {
-
-        }
+    courseware: {
+        new: {}
     },
-    clock : {
-        
-    },
-    smoking : {
-
-    }
+    clock: {},
+    smoking: {},
+    stat: {}
 }
 
+<<<<<<< HEAD
 var user = {
 
 
@@ -39,3 +35,6 @@ var user = {
 //var persons = [{"name":"刘畅","age":18,"height":165,"weight":80,"sex":"女","feature":"好看"},{"name":"蛋蛋","age":10,"height":15,"weight":8}]
 //
 //persons[0]["name"]
+=======
+var user = {}
+>>>>>>> 52abc29a231fdd26b0daaf62d07d22c959c81343

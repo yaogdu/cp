@@ -1,0 +1,68 @@
+/**
+ * Created by Administrator on 2016/7/5 0005.
+ */
+/*左右切换tab*/
+$(function(){
+    var liS=$('.ul_box ul').size();
+    var lisA=liS*394+'px';
+    var num=0;
+    $('.ul_box').css({width:lisA});
+
+    $('.left_arrow').click(function(){
+        num--;
+        if(num>=-liS+1){
+            $('.ul_box').animate({"left": 394 * num + 'px'}, 500);
+        }else{
+            num=0;
+            $('.ul_box').css({"left": 394 * num + 'px'});
+        }
+
+    });
+    $('.right_arrow').click(function(){
+        num++;
+        if(num<=0){
+            $('.ul_box').animate({"left": 394 * num + 'px'}, 500);
+        }else{
+            num=-liS+1;
+            $('.ul_box').css({"left": 394 * num + 'px'});
+        }
+
+    });
+});
+
+
+/*优质商家*/
+var sliS=$("ul.top_nav li").size();
+var leftM=-(((sliS-1)*30+sliS*78)/2);
+$("ul.top_nav").css("marginLeft",leftM+'px');
+$("ul.top_nav li").click(function(){
+    var _index=$(this).index();
+    $(this).addClass('cssBg').siblings().removeClass('cssBg');
+    $(".box_hide").eq(_index).show().siblings(".box_hide").hide();
+
+});
+/* 右侧楼梯导航*/
+var arry1=['img/rt01.png','img/rt04.png','img/rt02.png','img/rt03.png','img/rt05.png','img/rt06.png','img/rt07.png'];
+var arry2=['#fff5f5','#fff5f5','#fff5f5','#fff5f5','#fff5f5','#fff5f5'];
+var arry4=['#d91616','#d91616','#d91616','#d91616','#d91616'];
+var arry3=['img/rt001.png','img/rt004.png','img/rt002.png','img/rt003.png','img/rt005.png','img/rt006.png','img/rt007.png'];
+$(".right_tabNav ul li").each(function(i){
+    $(this).mouseover(function(){
+        $(this).find('.imgRt').css('backgroundColor',arry2[i]);
+        $(this).find('.imgRt').attr('src',arry1[i]);
+        $(this).find('.allP').css('color',arry4[i]);
+    }).mouseout(function(){
+        $(this).find('.imgRt').css('backgroundColor','#fff');
+        $(this).find('.imgRt').attr('src',arry3[i]);
+    });
+});
+
+$(window).scroll(function (){
+    var scrollTop = $(window).scrollTop()
+    if(scrollTop>=300){
+        $('.right_tabNav').show(800);
+    }else if(scrollTop<300){
+        $('.right_tabNav').hide(200);
+    }
+});
+

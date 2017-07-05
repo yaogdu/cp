@@ -1,0 +1,22 @@
+@charset "utf-8";
+img{vertical-align:middle}:focus{outline:0}
+html{color:#333;background:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body,a,table,td,tr,th,div,dl,i,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 '微软雅黑',Arial,Verdana,tahoma,Helvetica,sans-serif}
+input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+th{text-align:inherit}
+button{cursor:pointer}
+ol,ul,li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}
+q:before,q:after{content:''}
+select{vertical-align:middle}
+/*清除浮动*/
+.clearfix:after{clear:both;font-size:0;height:0;display:block;visibility:hidden;content:".";line-height:0}
+.clearfix{zoom:1}
+/*居中样式 */
+.layout_1190{
+    width: 1190px !important;
+    margin: 0 auto;
+    text-align: left !important;
+}

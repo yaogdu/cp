@@ -1,0 +1,153 @@
+/**
+ * Created by Administrator on 2016/7/11 0011.
+ */
+
+    //    搜索框下的链接
+//            前导页，登录注册购物车
+$.ajax({
+    url: environment + "/AjaxHome/GetLogin",
+    type: "get",
+    dataType: "jsonp",
+    jsonp: "callback", //jsonp回调参数，必需
+    success:function(response){
+        var data = response.data;
+//                    console.log(data);
+        if (data.uid == 0 || data.uid == undefined){
+            $("#login").css("display","block");
+            $("#register").css("display","block");
+            $("#userType").css("display","none");
+            //return;
+        } else {
+            var showLoginStatus = "";
+            var m_count = typeof (data.msgCount) !="undefined"?data.msgCount:[];
+            $("#login").css("display","none");
+            $("#register").css("display","none");
+            $("#userType").css("display","block");
+            var str = "";
+            var str1 = "";
+            var str2 = "";
+            var str3 = "";
+            str = '<li class="li-hover name-wd">'+
+                '<div class="name-wrap-t"><span class="name"><a target="_blank" href="'+userCenter+'" title="">'+data.name+'</a></span><i class="i-up"></i></div>'+
+                '<div class="fd-clr div-info name-wrap">'+
+                '        <div class="fd-left info-img">'+
+                '        <img src="'+data.header+'"></div>'+
+                '        <div class="fd-left info-zh">'+
+                '        <div class="info-zh-top"><a target="_blank" href="'+userCenter+'/account/SecurityIndex'+'">账号管理</a><span class="line">|</span><a target="_self" href="'+userLogin+'/user/logout.html'+'">退出</a></div>'+
+                '<div class="info-zh-bot">'+
+                '</div>'+
+                '        </div>'+
+                '        </div>'+
+                '        </li>'+
+                '        <li class="top-msg">'+
+                '        <div class="top-msg-td">'+
+                '        <a target="_blank" href="'+userCenter+'/msg/sysmsg'+'"><i class="msg-i"></i></a>';
+
+            if(m_count.length >0){
+                if(m_count[0] > 0){
+                    str +=  '<span class="number">'+m_count[0]+'</span>';
+                }
+                if(m_count[1] > 0){
+                    str1 =  '<span class="num">'+m_count[1]+'</span>';
+                }
+                if(m_count[2] > 0){
+                    str2 =  '<span class="num">'+m_count[2]+'</span>';
+                }
+                if(m_count[3] > 0){
+                    str3 =  '<span class="num">'+m_count[3]+'</span>';
+                }
+            }
+            str +=  '</div>'+
+                '<ul class="top-msg-bd">'+
+                '        <li><a href="'+userCenter+'/msg/sysmsg'+'" target="_blank">系统消息'+str1+'</a></li>'+
+                '        <li><a href="'+userCenter+'/msg/sysmsg/type/2'+'" target="_blank">交易消息'+str2+'</a></li>'+
+                '        <li><a href="'+userCenter+'/msg/sysmsg/type/3'+'" target="_blank">物流消息'+str3+'</a></li>'+
+                '</ul>'+
+                '</li>';
+
+            var car_num = 0;
+            var cart_productid = data.cart_productid;
+            var cart_productpic =data.cart_productpic;
+            var cart_stockid =data.cart_stockid;
+            var cart_products =data.cart_products;
+            var countcart =typeof(data.countcart) != "undefined"?data.countcart:'0';
+
+            var cart_str = '<li class="my-mod">'+
+                '<div class="my-td"><i class="icon-car"></i><a id="end" href="'+userCenter+'/order/cart'+'">购物车('+countcart+')</a><i class="icon-down"></i></div>'+
+                '<ul class="my-bd fd-clr my-bd-cart">'+
+                '<li class="tit">最近加入的宝贝：</li>';
+            var iskong = 0;
+            if(cart_productid){
+                $.each(cart_productid,function (k,v){
+                    iskong = 1;
+                    $.each(v,function (k1,v1){
+                        if(typeof (cart_stockid[k1]) != "undefined") {
+                            cart_str +=  '<li class="cart-list fd-clr">'+
+                                '    <div class="cart-img">';
+    //                                    console.log(k+"===="+k1);
+                            cart_str += '<img src="'+picUrl+cart_productpic[k]['picture']+'@80w_80h">';
+                            cart_str +=  '    </div>';
+                            cart_str += '    <p class="cart-name">' + cart_products[k]['product_name'] + '</p>' +
+                                '    <div class="cart-money">' +
+                                '        <p class="cart-mo-td fd-clr"><span class="red fd-right">' + cart_stockid[k1]['price'] + '</span><em class="fd-right">¥</em></p>' +
+                                '        <a class="del" datastockid="' + k1 + '">删除</a>' +
+                                '    </div>' +
+                                '</li>';
+                        }
+                    })
+                })
+            }
+            cart_str += '<li class="line"></li>';
+            cart_str += '<li class="check-my fd-clr"><span class="fd-left">';
+            if(iskong =='0'){
+                cart_str += "您的购物车还没有任何宝贝";
+            }
+            cart_str += '</span><a class="fd-right" href="'+userCenter+'/order/cart'+'">查看我的购物车</a></li>'+
+                '</ul>'+
+                '</li>';
+
+            // 处理用户类型
+            var user_type = data.user_type;
+            var user_str = ' <li class="my-mod">'+
+                '<div class="my-td"><a target="_blank" href="'+user_type.link+'">'+user_type.name+'</a><i class="icon-down"></i></div>'+
+                '<ul class="my-bd fd-clr my-bd-c">';
+
+            $.each(user_type.child,function (k,v){
+                user_str +=   '<li><a href="'+ v.link+'"  target="_blank">'+ v.name+'</a></li>';
+            })
+            user_str += '</ul>';
+            user_str +=  '</li>';
+
+            $("#loginStatus").append(str);
+            $("#shoppingCart").append(cart_str);
+            $("#userType").append(user_str);
+
+            $(".my-bd-cart").on('click','.del',function(){
+                var stockid = $(this).attr("datastockid");
+                $.ajax({
+                    type:"get",
+                    url:environment+"/AjaxHome/CartGet",
+                    data:{stockid:stockid},
+                    dataType:"jsonp",
+                    success:function(data){
+                        if(data.flag == "0"){
+                            alert("删除成功");
+                        }else{
+                            alert("删除失败");
+                        }
+                        window.location.reload();
+                    }
+                })
+            })
+        }
+    }
+})
+
+$("#bookPackage").attr("href",userCenter+"/collect/index");
+$("#bookStore").attr("href",userCenter+"/collect/index/type/2");
+$("#bookProduct").attr("href",userCenter+"/collect/index/type/3");
+$("#helpCenter").attr("href",environment+"/ccen/index");
+$("#JuCollege").attr("href",xue);
+$("#enterLogin").attr("href",userLogin+'/user/login.html');
+$("#freeRegister").attr("href",userLogin+'/user/Zhuce.html');
+

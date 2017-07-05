@@ -25,6 +25,7 @@
             $('#unsupport').append('<input id="begin" type = "button" value = "忍不住了~"/>');
             $('#unsupport').append('<br/>');
             $('#unsupport').append('<input type="button" value = "clear" id="clear"/>');
+            $('#unsupport').append('<a href="stat.html"> Go stat</a>');
 
             $('#unsupport').show();
 
@@ -68,8 +69,17 @@
             if(_this.exist){
                 var countStr = _this.getVal(today);
                 var count = parseInt(countStr);
-                count += 1;
-                _this.setVal(today,count);
+
+                if(count >=10){
+                    if(confirm("already "+count + " today")){
+                        count += 1;
+                        _this.setVal(today,count);
+                    }
+                }else{
+                    count += 1;
+                    _this.setVal(today,count);
+                }
+
             }else{
                 _this.setVal(today,1);
             }

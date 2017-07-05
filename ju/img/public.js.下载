@@ -1,0 +1,16 @@
+/**
+ * Created by Administrator on 2016/7/1 0001.
+ */
+//主机环境地址
+//var environment = "http://localhost:63342";
+var environment = "http://www.ju53.com";
+//var userCenter = "http://ucenter.tju53.com";
+var userCenter = "http://ucenter.ju53.com";
+//var userLogin = "http://login.tju53.com";
+var userLogin = "https://login.ju53.com";
+//var xue = "http://xue.local.com";
+var xue = "http://xue.ju53.com";
+
+//图片加载地址
+//var picUrl = "http://restest.loonxi.com";
+var picUrl = "http://picju53.loonxi.com";

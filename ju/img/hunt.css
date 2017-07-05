@@ -1,0 +1,686 @@
+@charset "UTF-8";
+.hunt_head {
+    width: 100%;
+    height: 72px;
+    background: #ff405c;
+    position:fixed;
+    top:0px;
+    z-index:999;
+}
+.hunt_head .hunt_divHeadNav {
+    width: 1190px;
+    margin: 0 auto;
+    position:relative;
+}
+.hunt_head .hunt_divHeadNav .down_meau {
+    position: absolute;
+    right: 7px;
+    top:15%;
+    display:none;
+}
+.hunt_head .hunt_divHeadNav .down_meau li{
+    width:32px;
+    height:4px;
+    border-radius:1px;
+    background:#fff;
+    margin-top:3px;
+}
+.hunt_head .hunt_divHeadNav .hunt_logo {
+    width: 130px;
+    height: 50px;
+    margin-top: 11px;
+    float: left;
+}
+.hunt_head .hunt_divHeadNav .hunt_logo img {
+    display: block;
+    width: 100%;
+}
+.hunt_head .hunt_divHeadNav .hunt_headUl {
+    float: right;
+}
+.hunt_head .hunt_divHeadNav .hunt_headUl li {
+    float: left;
+    margin-left: 54px;
+}
+.hunt_head .hunt_divHeadNav .hunt_headUl li a {
+    display: block;
+    line-height: 72px;
+    font-family:"Microsoft YaHei";
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.hunt_head .hunt_divHeadNav .hunt_headUl li a:hover {
+    text-decoration: underline;
+}
+.hunt_banner{
+    margin-top:70px;
+}
+.hunt_banner .banner_pic {
+    width: 100%;
+    overflow:hidden;
+}
+.hunt_banner .banner_pic img {
+    width: 100%;
+    display: block;
+}
+.hunt_banner .banner_txt {
+    width: 100%;
+    background: #f8f8f8;
+}
+.hunt_banner .banner_txt .banner_txtCenter {
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hunt_banner .banner_txt .banner_txtCenter img {
+    display: block;
+    width: 100%;
+}
+.hunt_proList {
+    width: 1190px;
+    margin: 90px auto 0px;
+}
+.hunt_proList h3 {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    width: 356px;
+    height: 58px;
+    margin: 0 auto;
+}
+.hunt_proList h3 span {
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background: #ff405c;
+    bottom: 0px;
+    left: 118px;
+}
+.hunt_proList ul.proList_ul {
+    margin-top: 50px;
+}
+.hunt_proList ul.proList_ul li {
+    width: 376px;
+    height: 650px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+    margin: 30px 10px 0px;
+    cursor: pointer;
+}
+.hunt_proList ul.proList_ul li dl dt {
+    width: 376px;
+    height: 376px;
+    overflow: hidden;
+}
+.hunt_proList ul.proList_ul li dl dt img {
+    width: 100%;
+    display: block;
+}
+.hunt_proList ul.proList_ul li dl dt.dt2 {
+    height: 240px;
+}
+.hunt_proList ul.proList_ul li dl dd {
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.hunt_proList ul.proList_ul li dl dd.dd1 {
+    font-size: 16px;
+    line-height: 65px;
+    color: #000;
+}
+.hunt_proList ul.proList_ul li dl dd.dd2 {
+    font-size: 14px;
+    color: #666;
+    width:100%;
+    height:64px;
+    overflow:hidden;
+}
+.hunt_proList ul.proList_ul li dl dd.dd3 {
+    width: 170px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    color: #fff;
+    background: #ff405c;
+    margin: 70px auto 0px;
+}
+.hunt_proList ul.proList_ul li dl dd.dd4 {
+    width: 260px;
+    height: 300px;
+    margin: 30px auto 0px;
+    overflow: hidden;
+    display:none;
+}
+.hunt_proList ul.proList_ul li dl dd.dd4 img {
+    width: 100%;
+    display: block;
+}
+
+.make_hunter {
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+.make_hunter img {
+    width: 100%;
+    display: block;
+}
+.make_hunter .text{
+    width:100%;
+    position:absolute;
+    left:0%;
+    top: 40%;
+    color:#fff;
+    text-align:center;
+}
+.make_hunter .text h3{
+    width:30%;
+    text-align:center;
+    font-size:32px;
+    margin:0 auto;
+    position:relative;
+}
+.make_hunter .text h3 span{
+    position:absolute;
+    width:120px;
+    height:3px;
+    background:#ff405c;
+    bottom:-10px;
+    left:50%;
+    margin-left:-60px;
+}
+.make_hunter .text p{
+    font-family:"Microsoft YaHei";
+    font-weight:300;
+    width:32%;
+    margin:0 auto;
+    font-size:30px;
+    line-height:50px;
+    margin-top:40px;
+    text-align:center;
+}
+.make_hunter .text p:nth-of-type(2){
+    margin-top:10px;
+}
+
+.make_hunter .con_ul li{
+    position:relative;
+}
+.make_hunter .con_ul li div.con_txt{
+    position:absolute;
+    width:402px;
+    left:160px;
+    top:50px;
+}
+.make_hunter .con_ul li div.con_txt h3{
+    font-size:20px;
+}
+.make_hunter .con_ul li div.con_txt p{
+    margin-top:30px;
+    font-size:16px;
+}
+.hunt_link ul {
+    width: 900px;
+    margin: 100px auto 0px;
+}
+.hunt_link ul li {
+    font-size: 20px;
+    height: 50px;
+    width: 250px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    float: left;
+    margin: 0px 25px;
+}
+.hunt_link ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+.hunt_link ul li.li_1 {
+    background: #ff405c;
+    border: none;
+}
+.hunt_link ul li.li_1 a {
+    color: #fff;
+}
+
+.gray_bg {
+    width: 100%;
+    height: 100px;
+    background: #f2f2f2;
+    margin-top: 130px;
+    position: relative;
+    /* overflow:hidden; */
+}
+.gray_bg img {
+    position: absolute;
+    left: 50%;
+    margin-left: -38px;
+    top: -34px;
+}
+
+.hunt_footer {
+    width: 100%;
+    height: 44px;
+    background: #888;
+    text-align: center;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #fff;
+    line-height: 44px;
+    overflow:hidden;
+}
+.hunt_bannerPhone{
+    width:1190px;
+    margin:0 auto;
+}
+.hunt_bannerPhone p.title{
+    text-align:center;
+    font-size:32px;
+    height:200px;
+    line-height:200px;
+    position:relative;
+}
+.hunt_bannerPhone p.title span{
+    position:absolute;
+    width:120px;
+    height:2px;
+    background:#ff405c;
+    left:50%;
+    margin-left:-60px;
+    top:130px;
+}
+.hunt_bannerPhone li{
+    width:50%;
+    float:left;
+}
+.hunt_bannerPhone li .des_txt{
+    margin-top:80px;
+    margin-left:50px;
+}
+.hunt_bannerPhone li .des_txt h3{
+    font-size:20px;
+}
+.hunt_bannerPhone li .des_txt p.txt{
+    width:374px;
+    margin-top:25px;
+    font-size:16px;
+}
+.hunt_bannerPhone li .des_txt p.wechat{
+    margin-top:35px;
+    font-size:16px;
+}
+.hunt_bannerPhone li .des_txt div.ewm{
+    margin-top:20px;
+}
+.hunt_bannerPhone li .des_txt div.ewm div.L_pic{
+    width:230px;
+    height:230px;
+    border:1px solid #d8d8d8;
+    overflow:hidden;
+    box-sizing: border-box;
+    float:left;
+}
+.hunt_bannerPhone li .des_txt div.ewm div.R_pic{
+    float:left;
+    margin-left:30px;
+    margin-top:70px;
+    width:126px;
+    height:126px;
+    overflow:hidden;
+}
+.hunt_bannerPhone li .des_txt div.ewm div.R_pic img{
+    display:block;
+    width:100%;
+}
+.hunt_bannerPhone li .des_txt p.ewm div.L_pic img{
+    display:block;
+    width:100%;
+}
+#box1{
+    margin-top:90px;
+}
+@media screen and (max-width: 1190px) {
+    .hunt_head {
+        width: 100%;
+        height: 52px;
+        background: #ff405c;
+    }
+    .hunt_head .hunt_divHeadNav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_logo {
+        width: 80px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_logo img {
+        display: block;
+        width: 100%;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_headUl {
+        float: right;
+        margin-right: 10px;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_headUl li {
+        margin-left: 35px;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_headUl li a {
+        display: block;
+        line-height: 52px;
+    }
+    .hunt_banner{
+        margin-top:52px;
+    }
+    .hunt_banner .banner_txt {
+        width: 100%;
+        overflow:hidden;
+    }
+    .hunt_banner .banner_txt .banner_txtCenter {
+        width: 100%;
+        overflow:hidden;
+    }
+
+    .hunt_proList {
+        width: 100%;
+        margin: 50px auto 0px;
+        overflow:hidden;
+    }
+    .hunt_proList h3 {
+        font-size: 26px;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        width: 356px;
+        height: 38px;
+        margin: 0 auto;
+    }
+    .hunt_proList ul.proList_ul {
+        margin-top: 40px;
+    }
+    .hunt_proList ul.proList_ul li {
+        width: 45%;
+        margin: 1% 2.5%;
+    }
+    .hunt_proList ul.proList_ul li dl dt {
+        width: 100%;
+        height: auto;
+    }
+    .hunt_proList ul.proList_ul li dl dt img {
+        width: 100%;
+        display: block;
+    }
+    .hunt_proList ul.proList_ul li dl dt.dt2 {
+        height: auto;
+    }
+    .hunt_proList ul.proList_ul li dl dd {
+        padding: 0px 10px;
+    }
+    .hunt_proList ul.proList_ul li dl dd.dd1 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .hunt_proList ul.proList_ul li dl dd.dd2 {
+        font-size: 12px;
+    }
+    .hunt_proList ul.proList_ul li dl dd.dd3 {
+        width: 150px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 16px;
+        margin: 20px auto 0px;
+    }
+    .hunt_proList ul.proList_ul li dl dd.dd4 {
+        width: 160px;
+        height: 200px;
+        margin: 20px auto 0px;
+        overflow: hidden;
+    }
+    .hunt_link ul {
+        width:550px;
+        margin: 40px auto 0px;
+    }
+    .hunt_link ul li {
+        font-size: 16px;
+        height: 40px;
+        width: 150px;
+        line-height: 40px;
+        margin: 0px 15px;
+    }
+    .hunt_footer {
+        height: 36px;
+        font-size: 10px;
+        line-height: 36px;
+    }
+    .make_hunter .text{
+        /* top:10%; */
+    }
+
+    .make_hunter .text h3 span{
+        bottom:-10px;
+    }
+    .make_hunter .text p{
+        width:80%;
+        margin-top:30px;
+    }
+    .make_hunter .text p:nth-of-type(2){
+        margin-top:10px;
+    }
+    .hunt_bannerPhone{
+        width:100%;
+        margin:0 auto;
+    }
+    .hunt_bannerPhone p.title{
+        height:100px;
+        line-height:100px;
+    }
+    .hunt_bannerPhone p.title span{
+        position:absolute;
+        width:100px;
+        margin-left:-50px;
+        top:80px;
+    }
+    .hunt_bannerPhone li{
+        width:50%;
+        float:left;
+    }
+    #box1{
+        margin-top:30px;
+    }
+    .make_hunter .con_ul li div.con_txt{
+        width:280px;
+        left:24%;
+        top:30px;
+    }
+    .make_hunter .con_ul li div.con_txt h3{
+        font-size:16px;
+    }
+    .make_hunter .con_ul li div.con_txt p{
+        margin-top:5px;
+        font-size:14px;
+    }
+    .make_hunter .text{
+        top: 30%;
+    }
+
+    .hunt_bannerPhone li .des_txt{
+        margin-top:30px;
+        margin-left:30px;
+    }
+    .hunt_bannerPhone li .des_txt h3{
+        font-size:18px;
+    }
+    .hunt_bannerPhone li .des_txt p.txt{
+        width:340px;
+        margin-top:10px;
+        font-size:14px;
+    }
+    .hunt_bannerPhone li .des_txt p.wechat{
+        margin-top:10px;
+    }
+    .hunt_bannerPhone li .des_txt div.ewm{
+        margin-top:10px;
+    }
+    .hunt_bannerPhone li .des_txt div.ewm div.L_pic{
+        width:170px;
+        height:170px;
+        border:1px solid #d8d8d8;
+
+    }
+    .hunt_bannerPhone li .des_txt div.ewm div.R_pic{
+        margin-left:20px;
+        margin-top:70px;
+        width:86px;
+        height:86px;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .hunt_head {
+        height: 35px;
+        box-sizing: border-box;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_logo {
+        width: 60px;
+        height: 30px;
+        margin-top: 5px;
+        margin-left: 6px;
+    }
+    .hunt_head .hunt_divHeadNav .down_meau {
+        display:block;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_headUl {
+        width:100%;
+        position:absolute;
+        top:35px;
+        display:none;
+        left:-35px;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_headUl li {
+        background:#fff;
+        height:35px;
+        clear:both;
+        width:100%;
+        text-indent:10px;
+        border-bottom:1px solid #ebebeb;
+    }
+    .hunt_head .hunt_divHeadNav .hunt_headUl li a {
+        line-height: 35px;
+        font-size:14px;
+        color:#ff405c;
+    }
+    .hunt_banner{
+        margin-top:35px;
+    }
+    .hunt_proList {
+        margin: 20px auto 0px;
+    }
+    .hunt_proList h3 {
+        font-size: 16px;
+        height: 28px;
+    }
+    .hunt_proList ul.proList_ul {
+        margin-top: 20px;
+    }
+
+    .hunt_proList ul.proList_ul li {
+        width: auto;
+        height: auto;
+        padding-bottom: 30px;
+
+    }
+
+    .hunt_link ul {
+        width: 100%;
+        margin: 20px auto 0px;
+    }
+
+    .hunt_link ul li {
+        font-size: 12px;
+        height: 30px;
+        width: 31%;
+        line-height: 30px;
+        margin: 0px 1%;
+    }
+
+    .gray_bg {
+        width: 100%;
+        height: 60px;
+        margin-top: 30px;
+    }
+
+    .gray_bg img {
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        top: -24px;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+
+    }
+
+    .make_hunter .text h3{
+        font-size:16px;
+    }
+    .make_hunter .text h3 span{
+        width:60px;
+        bottom:-5px;
+        margin-left:-30px;
+    }
+    .make_hunter .text p{
+        width:80%;
+        font-size:14px;
+        line-height:28px;
+        margin-top:10px;
+    }
+    .make_hunter .text p:nth-of-type(2){
+        margin-top:0px;
+    }
+    .hunt_bannerPhone p.title{
+        font-size:16px;
+        height:60px;
+        line-height:60px;
+    }
+    .hunt_bannerPhone p.title span{
+        position:absolute;
+        width:40px;
+        margin-left:-20px;
+        top:44px;
+    }
+    .hunt_bannerPhone li{
+        width:100%;
+        clear:both;
+    }
+    .make_hunter .con_ul li div.con_txt{
+        width:74%;
+        top:24px;
+    }
+    .make_hunter .con_ul li div.con_txt h3{
+        font-size:14px;
+    }
+    .make_hunter .con_ul li div.con_txt p{
+        margin-top:10px;
+        font-size:12px;
+    }
+    .hunt_bannerPhone li .des_txt p.txt{
+        width:96%;
+    }
+    .hunt_bannerPhone li .des_txt{
+        margin-left:20px;
+    }
+}
+
+/*# sourceMappingURL=hunt.css.map */
