@@ -7,6 +7,8 @@
         total:0,
         exist : false,
         init: function() {
+
+
             console.log('smoking');
             if(!window.localStorage){
                 $('#unsupport').find('span').text('Your browser does NOT support this website,please use chrome,safari,firefox on your device.');
